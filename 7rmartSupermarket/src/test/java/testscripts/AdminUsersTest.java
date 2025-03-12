@@ -20,7 +20,7 @@ public class AdminUsersTest extends Base{
 	HomePage home;
 	AdminUsers admin;
 	
-	@Test(groups="smoke")
+	@Test
 	public void verifyuserisableToCreateNewAdminUser() throws IOException
 	{
 		

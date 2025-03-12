@@ -7,9 +7,9 @@
 			<listener class-name="listeners.RetryListener"></listener>
 		</listeners>
 		<classes>
-			<class name="testscripts.CategoryTest">
-				<methods>
-					<include name="verifyuserisableToupdatecategory"></include>
+			<class name="testscripts.AdminUsersTest">
+			<methods>
+					<include name="verifyuserisableToCreateNewAdminUser"></include>
 				</methods>
 			</class>
 		</classes>

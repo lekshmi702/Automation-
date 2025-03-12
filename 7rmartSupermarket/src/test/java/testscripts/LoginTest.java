@@ -14,8 +14,8 @@ public class LoginTest  extends Base {
 	
 	
 	
-	@Test(groups={"smoke"})
-	public void verifyuserisAbletologinWithValidCredentials() throws IOException
+	@Test(groups="smoke")
+	public void vrifyuserisAbletologinWithValidCredentials() throws IOException
 	{
 		
 	
@@ -40,7 +40,7 @@ public class LoginTest  extends Base {
 		  Assert.assertTrue(isalertdisplayed,Constants.Lp_verifyUserIsabletologinWithValidUsernameInvalidpassword);
 		  
 	  }
-	@Test  
+	@Test(groups="smoke") 
 	 public void verifyUserisAbletoLoginWithinvalidusernameAndvalidpassword()
 	  {
 		  String username="apple";
@@ -52,7 +52,7 @@ public class LoginTest  extends Base {
 		  boolean isalertdisplayed=lp2.isalertdisplayed();
 		  Assert.assertTrue(isalertdisplayed,Constants.Lp_verifyUserisAbletoLoginWithinvalidusernameAndvalidpassword);
 	  }
-	@Test
+	@Test(groups="smoke")
 	 public void verifyUserIsableToLoginWithInvalidCredentials()
 	  {
 		  String username="apple";
