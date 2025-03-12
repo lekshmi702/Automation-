@@ -1,0 +1,17 @@
+
+<suite name="mytestsuite">
+	<parameter name="browser" value="Chrome"></parameter>
+	<test name="testNG">
+<listeners>
+			<listener class-name="listeners.Listener"></listener>
+			<listener class-name="listeners.RetryListener"></listener>
+		</listeners>
+		<classes>
+			<class name="testscripts.CategoryTest">
+				<methods>
+					<include name="verifyuserisableToupdatecategory"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
