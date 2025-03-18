@@ -5,9 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.WaitUtility;
+
 public class ManageNews {
 
 	public WebDriver driver;
+	WaitUtility wait= new WaitUtility();
 
 	public ManageNews(WebDriver driver) {
 		this.driver = driver;
@@ -67,8 +70,11 @@ public class ManageNews {
 		newssave1.click();
 		return new ManageNews(driver);
 	}
-
+     
+	
 	public boolean alrt1() {
+		
+		 wait.waitForAlertToBePresent(driver);
 		return alertnews1.isDisplayed();
 	}
 

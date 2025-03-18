@@ -48,7 +48,7 @@ public class Base {
 
 		driver.manage().window().maximize();
 
-		wait.implicitwait(driver);
+		wait.implicitlyWait(driver);
 
 	}
 

@@ -5,9 +5,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import utilities.FakerUtilities;
+
 public class ManageContact {
 
 	public WebDriver driver;
+	FakerUtilities faker=new FakerUtilities();
 
 	public ManageContact(WebDriver driver) {
 		this.driver = driver;
@@ -37,9 +40,11 @@ public class ManageContact {
 	}
 
 	public  ManageContact  phonenumberfield(String number) {
-
+         phonenumberfield.clear();
 		phonenumberfield.sendKeys(number);
 		return new ManageContact (driver);
+	
+		
 
 	}
 
@@ -53,6 +58,7 @@ public class ManageContact {
 		addressfield.clear();
 		addressfield.sendKeys(addresses);
 		return new ManageContact (driver);
+	
 	}
 
 	public  ManageContact  deliverytime(String time) {

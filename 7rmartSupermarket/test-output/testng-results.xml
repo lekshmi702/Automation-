@@ -1,109 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-14T10:46:46 IST" name="myTestSuite" finished-at="2025-03-14T10:46:47 IST" duration-ms="1606">
+  <suite started-at="2025-03-18T21:39:57 IST" name="mytestsuite" finished-at="2025-03-18T21:40:08 IST" duration-ms="10171">
     <groups>
-      <group name="smoke">
-        <method signature="ManagenewsTest.verifyuserisableToAddNewNews()[pri:0, instance:testscripts.ManagenewsTest@206a70ef]" name="verifyuserisableToAddNewNews" class="testscripts.ManagenewsTest"/>
-        <method signature="ManagenewsTest.verifyuserisableTonewseditNews()[pri:0, instance:testscripts.ManagenewsTest@206a70ef]" name="verifyuserisableTonewseditNews" class="testscripts.ManagenewsTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-03-14T10:46:46 IST" name="groupTest" finished-at="2025-03-14T10:46:47 IST" duration-ms="1606">
-      <class name="testscripts.ManagenewsTest">
-        <test-method signature="verifyuserisableToAddNewNews()[pri:0, instance:testscripts.ManagenewsTest@206a70ef]" started-at="2025-03-14T10:46:46 IST" name="verifyuserisableToAddNewNews" finished-at="2025-03-14T10:46:47 IST" duration-ms="1425" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-at pages.LoginPage.loginusingexceldata(LoginPage.java:64)
-at testscripts.ManagenewsTest.verifyuserisableToAddNewNews(ManagenewsTest.java:28)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+    <test started-at="2025-03-18T21:39:57 IST" name="testNG" finished-at="2025-03-18T21:40:08 IST" duration-ms="10171">
+      <class name="testscripts.ManagecontactTest">
+        <test-method is-config="true" signature="initializeBrowser(java.lang.String)[pri:0, instance:testscripts.ManagecontactTest@30b6ffe0]" started-at="2025-03-18T21:39:57 IST" name="initializeBrowser" finished-at="2025-03-18T21:40:02 IST" duration-ms="4228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyuserisableToAddNewNews -->
-        <test-method signature="verifyuserisableTonewseditNews()[pri:0, instance:testscripts.ManagenewsTest@206a70ef]" started-at="2025-03-14T10:46:47 IST" name="verifyuserisableTonewseditNews" finished-at="2025-03-14T10:46:47 IST" duration-ms="59" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-at pages.LoginPage.loginusingexceldata(LoginPage.java:64)
-at testscripts.ManagenewsTest.verifyuserisableTonewseditNews(ManagenewsTest.java:41)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyuserisableTomanageContactDetails()[pri:0, instance:testscripts.ManagecontactTest@30b6ffe0]" started-at="2025-03-18T21:40:02 IST" name="verifyuserisableTomanageContactDetails" finished-at="2025-03-18T21:40:08 IST" duration-ms="5883" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyuserisableTonewseditNews -->
-      </class> <!-- testscripts.ManagenewsTest -->
-    </test> <!-- groupTest -->
-  </suite> <!-- myTestSuite -->
+        </test-method> <!-- verifyuserisableTomanageContactDetails -->
+        <test-method is-config="true" signature="driverquit(org.testng.ITestResult)[pri:0, instance:testscripts.ManagecontactTest@30b6ffe0]" started-at="2025-03-18T21:40:08 IST" name="driverquit" finished-at="2025-03-18T21:40:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyuserisableTomanageContactDetails status=SUCCESS method=ManagecontactTest.verifyuserisableTomanageContactDetails()[pri:0, instance:testscripts.ManagecontactTest@30b6ffe0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverquit -->
+      </class> <!-- testscripts.ManagecontactTest -->
+    </test> <!-- testNG -->
+  </suite> <!-- mytestsuite -->
 </testng-results>

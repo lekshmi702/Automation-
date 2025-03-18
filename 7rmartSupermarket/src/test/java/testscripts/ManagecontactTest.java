@@ -10,15 +10,23 @@ import constants.Constants;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.ManageContact;
+import utilities.FakerUtilities;
 
 public class ManagecontactTest extends Base{
 	LoginPage login;
 	HomePage home;
 	ManageContact manage;
+	FakerUtilities faker=new FakerUtilities();
 	
 	@Test
 	public void verifyuserisableTomanageContactDetails() throws IOException
 	{
+		
+		//fakerutility methods
+		String fakephonenumber=faker.phonenumber();
+		String fakeemail=faker.generateemail();
+		String fakeaddress=faker.addresss();
+		long randomNumber=faker.generaterandomnumber();
 		
 		login=new LoginPage(driver);
 		home=login.loginusingexceldata();
