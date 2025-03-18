@@ -25,7 +25,7 @@ public class Base {
 	FileInputStream file;
 	public WebDriver driver;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun=true)
 	@Parameters("browser")
 	public void initializeBrowser(String browser) throws Exception {
 
@@ -52,7 +52,7 @@ public class Base {
 
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun=true)
 	public void driverquit(ITestResult itestresult) throws IOException
 
 	{

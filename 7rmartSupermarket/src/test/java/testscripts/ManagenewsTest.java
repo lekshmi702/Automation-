@@ -19,7 +19,7 @@ public class ManagenewsTest extends Base
 	
 	
 	
-	@Test
+	@Test(groups="smoke")
 	public void verifyuserisableToAddNewNews() throws IOException
 	{
 	
@@ -34,7 +34,7 @@ public class ManagenewsTest extends Base
 
 }
 	
-	@Test
+	@Test(groups="smoke")
 	public void  verifyuserisableTonewseditNews() throws IOException
 	{
 		 login=new LoginPage(driver);

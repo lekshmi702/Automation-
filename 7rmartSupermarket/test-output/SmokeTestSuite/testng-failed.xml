@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [myTestSuite]">
-  <test thread-count="5" name="groupTest(failed)">
-    <parameter name="browser" value="chrome"/>
+<suite name="Failed suite [SmokeTestSuite]">
+  <test thread-count="5" name="SmokeTests(failed)">
     <groups>
       <run>
         <include name="smoke"/>
@@ -15,6 +14,12 @@
           <include name="verifyuserisableToAddNewNews"/>
         </methods>
       </class> <!-- testscripts.ManagenewsTest -->
+      <class name="testscripts.CategoryTest">
+        <methods>
+          <include name="verifyuserisableTocreateCategory"/>
+          <include name="verifyuserisableToupdatecategory"/>
+        </methods>
+      </class> <!-- testscripts.CategoryTest -->
     </classes>
-  </test> <!-- groupTest(failed) -->
-</suite> <!-- Failed suite [myTestSuite] -->
+  </test> <!-- SmokeTests(failed) -->
+</suite> <!-- Failed suite [SmokeTestSuite] -->

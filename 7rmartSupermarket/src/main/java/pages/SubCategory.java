@@ -40,7 +40,15 @@ public class SubCategory {
     @FindBy(xpath="//i[@class='icon fas fa-check']")WebElement alert;
     @FindBy(xpath="//a[@class='btn btn-rounded btn-primary']")WebElement search;
     @FindBy(xpath="//select[@id='cat_id']")WebElement dropdown;
-    @FindBy(xpath="//input[@name='ut']")WebElement editenetersubcategoryname;	
+    @FindBy(xpath="//input[@name='ut']")WebElement editenetersubcategoryname;
+    
+    @FindBy(xpath="//button[@name='Search']")WebElement clicksearch;
+    @FindBy(xpath="//a[@class='btn btn-sm btn btn-primary btncss']")WebElement updatebutton;
+    
+    @FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']//tr/td[1]") List<WebElement> tablesearch;
+    @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement updatealert;
+    @FindBy(xpath="//a[@class='btn btn-sm btn btn-danger btncss']")WebElement deletebuttonclick;
+    @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement deleteassert;
 public SubCategory onclick()
 {
 	 onclick.click();
@@ -102,13 +110,13 @@ public boolean isalertDisplayed()
 		 return new SubCategory(driver);
 	
 	}
-	@FindBy(xpath="//button[@name='Search']")WebElement clicksearch;
+	
 	public boolean searchsubmit()
 	{
 		return clicksearch.isDisplayed();
 		
 	}
-	@FindBy(xpath="//a[@class='btn btn-sm btn btn-primary btncss']")WebElement updatebutton;
+	
 	public SubCategory updateclick()
 	{
 		updatebutton.click();
@@ -155,7 +163,7 @@ public void searchenetersubcatname(String searchsubname)
 	searchsubnameeneter.sendKeys(searchsubname);
 }*/
 
-@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement updatealert;
+
 public boolean updatealert()
 {
 	return updatealert.isDisplayed();
@@ -167,7 +175,7 @@ public SubCategory searchsearch()
 	searchsearch1.click();
 	 return new SubCategory(driver);
 }
-@FindBy(xpath="//table[@class='table table-bordered table-hover table-sm']//tr/td[1]") List<WebElement> tablesearch;
+
 public boolean elementsearching()
 {
 	String input="burger";
@@ -194,15 +202,16 @@ public boolean elementsearching()
 	return false;
 }
 
-@FindBy(xpath="//a[@class='btn btn-sm btn btn-danger btncss']")WebElement deletebuttonclick;
+
 public SubCategory deleteclick()
 {
 	page.javascriptclick(deletebuttonclick, driver);
+	 page.alert(driver);
 	 return new SubCategory(driver);
 }
-	 @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement deleteassert;
+	
 public boolean deleteassert()
-{
+{    
      return deleteassert.isDisplayed();
 }
 

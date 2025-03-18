@@ -26,6 +26,7 @@ public static final String sucategoryfile=System.getProperty("user+dir)"+"\\src\
 	
 	public static final String Subcat_verifyAddNewSubCategoryWithValidDetails="unsuccessfull";
 	public static final String Subcat_verifyuserisableToupdateCategory="updatealert not displayed";
+	public static final String subcat_deletesubCategory="subcategory not deleted";
 	 
 	
 }

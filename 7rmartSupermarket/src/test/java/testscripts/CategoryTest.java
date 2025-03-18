@@ -19,7 +19,7 @@ public class CategoryTest extends Base{
 	Category cat;
 
 
-@Test(groups={"smoke"})
+@Test(groups="smoke")
 public void verifyuserisableTocreateCategory() throws IOException
 {
 	 login=new LoginPage(driver);
@@ -39,7 +39,7 @@ public void verifyuserisableTocreateCategory() throws IOException
 	
 }
 
-@Test(groups={"smoke"})
+@Test(groups="smoke")
 public void verifyuserisableToupdatecategory() throws IOException
 {
 	

@@ -58,47 +58,38 @@ public class SubcategoryTest extends Base
 	Assert.assertTrue(isupdatealertdisplayed,Constants.Subcat_verifyuserisableToupdateCategory);
 	}
 	
-}
-	/*
-	@Test
+
+	
+	/*@Test
 	
 	public void searchTheCreatedSubcategoryInSearchbar() throws IOException
 	  {
 
-		LoginPage login=new LoginPage(driver);
-		login.loginusingexceldata();
+		 login=new LoginPage(driver);
+		home=login.loginusingexceldata();
+		subcategory=home.clicksubcategory();
+		String entersubname="chicken burger";
 		
-		HomePage home=new HomePage(driver);
-		home.clicksubcategory();
-		
-		SubCategory subcategory=new SubCategory(driver);
-		 subcategory.searchbutton();
-		  subcategory.searchselectsubdropdown();
-
-			String entersubname="chicken burger";
-			subcategory.searchsubcategoryname(entersubname);
-		subcategory.searchsearch();
+		 subcategory.searchbutton().searchselectsubdropdown().searchsubcategoryname(entersubname).searchsearch();
 
 			boolean alertdisplayed=subcategory.isalertDisplayed();
-			Assert.assertTrue(alertdisplayed,"unsuccessfull");
+			Assert.assertTrue(alertdisplayed,Constants.subcat_searchTheCreatedSubcategoryInSearchbar);
 		  
 		  
-	  }	  
+	  }	*/ 
 
 	@Test
 	public void deletesubCategory() throws IOException
 	{
 
-		LoginPage login=new LoginPage(driver);
-		login.loginusingexceldata();
+		 login=new LoginPage(driver);
+		home=login.loginusingexceldata();
 		
-		HomePage home=new HomePage(driver);
-		home.clicksubcategory();
-		SubCategory subcategory=new SubCategory(driver);
-		subcategory.deleteclick();
+		
+		subcategory=home.clicksubcategory().deleteclick();
 	
-		//boolean deleteassertt=subcategory.deleteassert();
-		//Assert.assertTrue(deleteassertt, "subcategory not deleted");
+	boolean deleteassertt=subcategory.deleteassert();
+	Assert.assertTrue(deleteassertt,Constants.subcat_deletesubCategory);
 		
 		
 
@@ -106,10 +97,10 @@ public class SubcategoryTest extends Base
 	
 	
 	
-	}*/
+	}
 	
 	
-
+}
 	
 
 	

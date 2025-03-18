@@ -7,11 +7,15 @@
 			<listener class-name="listeners.RetryListener"></listener>
 		</listeners>
 		<classes>
-			<class name="testscripts.AdminUsersTest">
-			<methods>
-					<include name="verifyuserisableToCreateNewAdminUser"></include>
-				</methods>
-			</class>
+			<class name="testscripts.SubcategoryTest"></class>
+			<class name="testscripts.AdminUsersTest"></class>
+			<class name="testscripts.CategoryTest"></class>
+			<class name="testscripts.LoginTest"></class>
+			<class name="testscripts.ManagecontactTest"></class>
+			<class name="testscripts.ManageFooterTest"></class>
+			<class name="testscripts.ManagenewsTest"></class>
+		
+			
 		</classes>
 	</test>
 </suite>

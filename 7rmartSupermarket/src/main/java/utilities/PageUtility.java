@@ -1,5 +1,6 @@
 package utilities;
 
+import java.sql.Driver;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -84,6 +85,11 @@ public class PageUtility {
 		Date date = new Date();
 		SimpleDateFormat formatter = new SimpleDateFormat("ddMMyyhhmmss");
 		return formatter.format(date);
+	}
+	
+	public void alert(WebDriver driver)
+	{
+		driver.switchTo().alert().accept();
 	}
 
 }

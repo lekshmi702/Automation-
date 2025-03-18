@@ -45,9 +45,7 @@ public class LoginPage {
 		LoginButton.click();
 		return new HomePage(driver);
 		
-	}
-	
-	
+	}	
 
 public boolean ishomepageloded()
 {
