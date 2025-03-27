@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,17 @@
                     <div class="method-list-content passed suite-mytestsuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-mytestsuite" title="testscripts.ManagecontactTest" class="method navigator-link" hash-for-method="verifyuserisableTomanageContactDetails">verifyuserisableTomanageContactDetails</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-mytestsuite" title="testscripts.SubcategoryTest" class="method navigator-link" hash-for-method="deletesubCategory">deletesubCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-mytestsuite" title="testscripts.SubcategoryTest" class="method navigator-link" hash-for-method="verifyAddNewSubCategoryWithValidDetails">verifyAddNewSubCategoryWithValidDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-mytestsuite" title="testscripts.SubcategoryTest" class="method navigator-link" hash-for-method="verifyuserisableToupdateCategory">verifyuserisableToupdateCategory</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-mytestsuite -->
@@ -121,14 +131,28 @@
           <div class="suite-mytestsuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testscripts.ManagecontactTest</span>
+              <span class="class-name">testscripts.SubcategoryTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyuserisableTomanageContactDetails">
-                  </a> <!-- verifyuserisableTomanageContactDetails -->
-                  <span class="method-name">verifyuserisableTomanageContactDetails</span>
+                  <a name="deletesubCategory">
+                  </a> <!-- deletesubCategory -->
+                  <span class="method-name">deletesubCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddNewSubCategoryWithValidDetails">
+                  </a> <!-- verifyAddNewSubCategoryWithValidDetails -->
+                  <span class="method-name">verifyAddNewSubCategoryWithValidDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyuserisableToupdateCategory">
+                  </a> <!-- verifyuserisableToupdateCategory -->
+                  <span class="method-name">verifyuserisableToupdateCategory</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -150,7 +174,7 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;testNG&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testscripts.ManagecontactTest&quot;/&gt;
+      &lt;class name=&quot;testscripts.SubcategoryTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- testNG --&gt;
 &lt;/suite&gt; &lt;!-- mytestsuite --&gt;
@@ -190,16 +214,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyuserisableTomanageContactDetails')
-data.setCell(0, 2, 'testscripts.ManagecontactTest')
-data.setCell(0, 3, 5883);
+data.setCell(0, 1, 'verifyuserisableToupdateCategory')
+data.setCell(0, 2, 'testscripts.SubcategoryTest')
+data.setCell(0, 3, 4772);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyAddNewSubCategoryWithValidDetails')
+data.setCell(1, 2, 'testscripts.SubcategoryTest')
+data.setCell(1, 3, 4688);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'deletesubCategory')
+data.setCell(2, 2, 'testscripts.SubcategoryTest')
+data.setCell(2, 3, 3594);
 window.suiteTableData['mytestsuite']= { tableData: data, tableDiv: 'times-div-mytestsuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-mytestsuite">
               </div> <!-- times-div-mytestsuite -->
             </div> <!-- times-div -->
@@ -225,18 +257,42 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testscripts.ManagecontactTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testscripts.SubcategoryTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializeBrowser(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyuserisableTomanageContactDetails</span>
-                <span class="method-start">4231 ms</span>
+                <span class="method-name">deletesubCategory</span>
+                <span class="method-start">3269 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverquit([TestResult name=verifyuserisableTomanageContactDetails status=SUCCESS method=ManagecontactTest.veri...)</span>
-                <span class="method-start">10121 ms</span>
+                <span class="method-name">driverquit([TestResult name=deletesubCategory status=SUCCESS method=SubcategoryTest.deletesubCategory()[pri:0, ...)</span>
+                <span class="method-start">6872 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeBrowser(Chrome)</span>
+                <span class="method-start">6874 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddNewSubCategoryWithValidDetails</span>
+                <span class="method-start">11240 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverquit([TestResult name=verifyAddNewSubCategoryWithValidDetails status=SUCCESS method=SubcategoryTest.verif...)</span>
+                <span class="method-start">15931 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializeBrowser(Chrome)</span>
+                <span class="method-start">15932 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyuserisableToupdateCategory</span>
+                <span class="method-start">19700 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverquit([TestResult name=verifyuserisableToupdateCategory status=SUCCESS method=SubcategoryTest.verifyuseris...)</span>
+                <span class="method-start">24474 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

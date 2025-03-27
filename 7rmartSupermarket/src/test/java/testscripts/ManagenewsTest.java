@@ -16,22 +16,14 @@ public class ManagenewsTest extends Base
 	LoginPage login;
 	HomePage home;
 	ManageNews news;
-	
-	
-	
 	@Test(groups="smoke")
 	public void verifyuserisableToAddNewNews() throws IOException
 	{
-	
-	
 	login=new LoginPage(driver);
 	home=login.loginusingexceldata();
     news=home.managenewsclick().newbutton().newsenter("This is my news").save();
 	boolean  alertnews=news.alrt();
-	
 	Assert.assertTrue(alertnews,Constants.Mannews_verifyuserisableToAddNewNews);
-	
-
 }
 	
 	@Test(groups="smoke")
@@ -41,7 +33,6 @@ public class ManagenewsTest extends Base
 		home=login.loginusingexceldata();
 		news=home.managenewsclick().newbutton1().newsenter1("This is my news1").save1();
 		boolean  alertnews1=news.alrt1();
-		
 		Assert.assertTrue(alertnews1,Constants.Mannews_verifyuserisableToEditNews);
 		
 		

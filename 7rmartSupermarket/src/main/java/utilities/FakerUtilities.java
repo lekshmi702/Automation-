@@ -4,10 +4,6 @@ import com.github.javafaker.Faker;
 
 public class FakerUtilities {
 
-	
-	
-	
-	
 	Faker faker=new Faker();
 	public String generatefirstname() {
 return faker.name().firstName();

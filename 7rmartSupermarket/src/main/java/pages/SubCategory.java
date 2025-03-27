@@ -17,14 +17,15 @@ import constants.Constants;
 import utilities.FileuploadUtility;
 import utilities.PageUtility;
 
+
+
 public class SubCategory {
 
 	public WebDriver driver;
 	FileuploadUtility file =new FileuploadUtility();
 	PageUtility page= new PageUtility();
-	
-	
-	
+
+
 	public SubCategory(WebDriver driver)
 	{
 		this.driver=driver;
@@ -95,6 +96,7 @@ public boolean isalertDisplayed()
 }
  public SubCategory searchbutton()
 	{
+	 
 		search.click();
 		 return new SubCategory(driver);
 	}
@@ -171,7 +173,8 @@ public boolean updatealert()
 }
 @FindBy(xpath="//button[@name='Search']")WebElement searchsearch1;
 public SubCategory searchsearch()
-{
+{  
+	
 	searchsearch1.click();
 	 return new SubCategory(driver);
 }
@@ -205,8 +208,10 @@ public boolean elementsearching()
 
 public SubCategory deleteclick()
 {
+
 	page.javascriptclick(deletebuttonclick, driver);
 	 page.alert(driver);
+	 
 	 return new SubCategory(driver);
 }
 	

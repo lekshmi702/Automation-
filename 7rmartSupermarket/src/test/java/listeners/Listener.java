@@ -12,21 +12,12 @@ import com.aventstack.extentreports.Status;
 import automationcore.Base;
 import utilities.ExtenReportUtility;
 
- 
-
-	
-	
-	
-	
 	public class Listener extends Base implements ITestListener {
-
-		
-		
-		
-		ExtentTest test; //represents a single test
+	
+		ExtentTest test; 
 		ExtentReports extent = ExtenReportUtility.createExtentReports();  
 		ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
-		public void onTestStart(ITestResult result)//invok when a test start
+		public void onTestStart(ITestResult result)
 		{  
 			ITestListener.super.onTestStart(result);  
 			test = extent.createTest(result.getMethod().getMethodName());  
@@ -75,7 +66,7 @@ import utilities.ExtenReportUtility;
 	public void onTestSkipped(ITestResult result) {   
 		ITestListener.super.onTestSkipped(result);
 		extentTest.get().log(Status.SKIP, "Test Skipped");
-		//String testMethodName = result.getMethod().getMethodName();
+	
 	}
 
 	public void onTestFailedWithTimeout(ITestResult result) {  
@@ -88,7 +79,7 @@ import utilities.ExtenReportUtility;
 
 	public void onFinish(ITestContext context) {   
 		ITestListener.super.onFinish(context);  
-		extent.flush();//save and rights all the collected logs and test details into the final report
+		extent.flush();
 	}
 	}
 

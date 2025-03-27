@@ -8,13 +8,13 @@
   </listeners>
   <test thread-count="5" name="testNG(failed)">
     <classes>
-      <class name="testscripts.ManagenewsTest">
+      <class name="testscripts.SubcategoryTest">
         <methods>
-          <include name="verifyuserisableTonewseditNews"/>
           <include name="initializeBrowser"/>
+          <include name="deletesubCategory"/>
           <include name="driverquit"/>
         </methods>
-      </class> <!-- testscripts.ManagenewsTest -->
+      </class> <!-- testscripts.SubcategoryTest -->
     </classes>
   </test> <!-- testNG(failed) -->
 </suite> <!-- Failed suite [mytestsuite] -->

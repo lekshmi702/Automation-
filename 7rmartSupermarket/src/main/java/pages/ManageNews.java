@@ -54,7 +54,6 @@ public class ManageNews {
 	public boolean alrt() {
 		return alertnews.isDisplayed();
 	}
-	// managenew edit
 
 	public ManageNews newbutton1() {
 		newbutton1.click();

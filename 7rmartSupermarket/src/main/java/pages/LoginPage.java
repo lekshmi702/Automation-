@@ -25,11 +25,8 @@ public class LoginPage {
 	@FindBy (xpath="//input[@name='username']")WebElement usernameField;
 	@FindBy(xpath="//input[@name='password']")WebElement passwordField;
 	@FindBy (xpath="//button[@type='submit']")WebElement LoginButton;
-	
 	@FindBy (xpath="//div[@class='alert alert-danger alert-dismissible']")WebElement alert;
 	@FindBy(xpath="//span[text()='7rmart supermarket']")WebElement text;
-	
-	
 	public void enterusernameonusernameField( String username)
 	{
 		usernameField.sendKeys(username);

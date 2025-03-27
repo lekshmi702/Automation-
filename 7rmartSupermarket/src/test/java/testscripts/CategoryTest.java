@@ -17,8 +17,6 @@ public class CategoryTest extends Base{
 	LoginPage login;
 	HomePage home;
 	Category cat;
-
-
 @Test(groups="smoke")
 public void verifyuserisableTocreateCategory() throws IOException
 {
@@ -29,11 +27,6 @@ public void verifyuserisableTocreateCategory() throws IOException
 	cat=home.clickcategory().clicknewbutton().
 			enternewcategry(eneternewcategoryy).discount().choosefile()
 			.clicksavebutton();
-	//cat.enternewcategry("job");
-
-	
-	
-
 	boolean categoryalert=cat.categoryalert();
 	Assert.assertTrue(categoryalert,Constants.Catpage_verifyuserisableTocreateCategory);
 	
@@ -47,37 +40,8 @@ public void verifyuserisableToupdatecategory() throws IOException
 	home=login.loginusingexceldata();
 	cat=home.clickcategory().categoryupdateclick().catrgoryupdatename().categorydiscount1().categoryupdate1();
 	boolean alertdisplayed=cat.updatealert();
-	Assert.assertTrue(alertdisplayed,Constants.Catpage_verifyuserisableToupdatecategory);
-	
-	
-	
-	
-	
+	Assert.assertTrue(alertdisplayed,Constants.Catpage_verifyuserisableToupdatecategory);	
 }
-/*
-@Test
-public void verifycategorysearch() throws IOException
-{
-	
-	LoginPage login=new LoginPage(driver);
-	login.loginusingexceldata();
-	
-	HomePage home=new HomePage(driver);
-	home.clickcategory();
-	Category cat=new Category(driver);
-	cat.categorysearch();
-	cat.categorysearchname("IT JOBS");
-	
-	cat.categorysearchnamesearchclick();
-	//boolean alertdisplayed=cat.categoryalert();
-	//Assert.assertTrue(alertdisplayed,"unsuccessfull");
-  
-	
-	
-}*/
-
-
-
 }
 
 

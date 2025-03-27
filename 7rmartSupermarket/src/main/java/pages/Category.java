@@ -20,7 +20,6 @@ public class Category {
 	FileuploadUtility file = new FileuploadUtility();
 	PageUtility page=new PageUtility();
 	
-
 	public Category(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -44,13 +43,7 @@ public class Category {
 	WebElement categoryupdatename;
 	@FindBy(xpath = "//button[@class='btn btn-danger']")
 	WebElement categoryupdate;
-	
 	@FindBy(xpath="//ul[@class='ms-list']")WebElement discount1;
-	
-	
-	
-	
-	
 	@FindBy(xpath ="//div[@class='alert alert-success alert-dismissible']")
 	WebElement updatealert;
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-primary']")
@@ -114,9 +107,6 @@ public class Category {
 		return new Category (driver);
 	}
 	
-	
-	
-
 	public Category categoryupdate1() {
 		//categoryupdate.click();
 		page.javascriptclick(categoryupdate, driver);
@@ -132,7 +122,8 @@ public class Category {
 		return new Category(driver);
 	}
 
-	public  Category categorysearchname(String searchname) {
+	public  Category categorysearchname(String searchname) 
+	{
 		categorysearchname.sendKeys(searchname);
 		return new Category(driver);
 	}

@@ -18,7 +18,6 @@ public class AdminUsers {
 	public WebDriver driver;
 	FileuploadUtility file = new FileuploadUtility();
 	PageUtility page = new PageUtility();
-
 	@FindBy(xpath = "//a[@class='btn btn-rounded btn-danger']")
 	WebElement createnewbutton;
 	@FindBy(xpath = "//input[@id='username']")
@@ -87,8 +86,6 @@ public class AdminUsers {
 		
 	}
 
-	// adminusers search
-
 	public AdminUsers adminsearch() {
 		adminsearch.click();
 		return new  AdminUsers(driver);
@@ -110,8 +107,6 @@ public class AdminUsers {
 		searchbuttonclick.click();
 		return new  AdminUsers(driver);
 	}
-
-//adminupdate
 
 	public AdminUsers adminupdate() {
 

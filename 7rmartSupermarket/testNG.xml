@@ -6,11 +6,14 @@
 			<listener class-name="listeners.Listener"></listener>
 			<listener class-name="listeners.RetryListener"></listener>
 		</listeners>
-		<classes>
-			
-			<class name="testscripts.ManagecontactTest"></class>
-			
-		
+		<classes>		
+			<class name="testscripts.AdminUsersTest"></class>	
+			<class name="testscripts.CategoryTest"></class>	
+			<class name="testscripts.LoginTest"></class>	
+			<class name="testscripts.ManagecontactTest"></class>	
+			<class name="testscripts.ManageFooterTest"></class>	
+			<class name="testscripts.ManagenewsTest"></class>	
+			<class name="testscripts.SubcategoryTest"></class>	
 			
 		</classes>
 	</test>

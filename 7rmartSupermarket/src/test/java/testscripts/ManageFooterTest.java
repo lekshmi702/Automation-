@@ -22,7 +22,7 @@ public class ManageFooterTest extends Base {
 		login = new LoginPage(driver);
 		home = login.loginusingexceldata();
 		product = home.managefooterclick().manageedit().footeraddress("obsqura space zone, kochi")
-				.footemail("obsqura@123").footnumber("9876543210").footupdateclick();
+		.footemail("obsqura@123").footnumber("9876543210").footupdateclick();
 		boolean footalert = product.footalert();
 		Assert.assertTrue(footalert,Constants.Manfoot_verifyuserisableTomanageproduct);
 

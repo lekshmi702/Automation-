@@ -1,15 +1,13 @@
 <suite name="myTestSuite">
-<test name="groupTest">
-	<parameter name="browser" value="chrome"></parameter>
+	<test name="groupTest">
+		<parameter name="browser" value="chrome"></parameter>
 		<groups>
 			<run>
 				<include name="smoke"></include>
 			</run>
 		</groups>
 		<classes>
-				
-			<class name="testscripts.LoginTest"></class>
-</classes>
+			<class name="testscripts.SubcategoryTest"></class>
+		</classes>
 	</test>
-
 </suite>

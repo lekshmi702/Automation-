@@ -17,7 +17,6 @@ public WebDriver driver;
 		
 	}
 	   
-	
 	@FindBy (xpath="//p[text()='Sub Category']")WebElement subcategory;
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-category']")WebElement clickcategory1;
 	@FindBy(xpath="//p[text()='Manage Contact']")WebElement managecontact;
@@ -31,45 +30,30 @@ public WebDriver driver;
 	  return new SubCategory(driver);
 		
 	}
-	
-
-	
 	public Category clickcategory()
 	{
 		clickcategory1.click();
 		return new Category(driver);
 	}
-	
-	
-	
-	
 	public ManageContact clickmanagecontact()
 	{
 		managecontact.click();
 		return new ManageContact(driver);
 	}
-	
-
-public AdminUsers adminusersclick()
+	public AdminUsers adminusersclick()
 {
 	adminusers.click();
 	return  new AdminUsers(driver);
 }
-
-
 public ManageFooterText managefooterclick()
 {
 	managefooterclick.click();
 	return new ManageFooterText(driver);
 }
-
-
 public ManageNews managenewsclick()
 {
         managenewsclick.click();
         return new ManageNews(driver);
 }
-
-
 	
 }

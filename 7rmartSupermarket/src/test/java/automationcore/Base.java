@@ -49,7 +49,7 @@ public class Base {
 		driver.manage().window().maximize();
 
 		wait.implicitlyWait(driver);
-
+		
 	}
 
 	@AfterMethod(alwaysRun=true)
